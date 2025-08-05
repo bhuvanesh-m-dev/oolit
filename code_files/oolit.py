@@ -13,14 +13,14 @@ def oolit():
         prompt = ' '.join(sys.argv[1:])
     else:
         # Provide a default prompt if none is given
-        prompt = input("Enter your prompt : ")
+        prompt_user = input("Enter your prompt : ")
+        prompt = prompt_user + "I want it in 2 para only each para contains 5 lines only"
     
     # Send prompt to Ollama and get response
-    print(f"Sending prompt: {prompt}")
+    print("Thinking...")
     response = api.send_prompt(prompt)
     
     # Print the response
-    print(f"Response: {response}")
+    print(f"Oolit: {response}")
 
-if __name__ == "__oolit__":
-    oolit
+oolit()
