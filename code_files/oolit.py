@@ -1,5 +1,6 @@
 # oolit.py
 
+
 import sys
 from api import api
 
@@ -17,6 +18,6 @@ def oolit():
     response = api(prompt)
     
     # Print the response
-    print(f"Oolit: {response}")
+    print("Oolit : "+response)
 
 oolit()
