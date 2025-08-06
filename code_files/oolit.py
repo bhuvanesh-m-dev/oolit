@@ -1,8 +1,7 @@
-# main.py
-# Entry point for PyLlamaUI, initializes the GUI and connects components
+# oolit.py
 
 import sys
-from api import OllamaAPI
+from api import api
 
 def oolit():
     # Create Ollama API instance
@@ -14,7 +13,7 @@ def oolit():
     else:
         # Provide a default prompt if none is given
         prompt_user = input("Enter your prompt : ")
-        prompt = prompt_user + "I want it in 2 para only each para contains 5 lines only"
+        prompt = prompt_user
     
     # Send prompt to Ollama and get response
     print("Thinking...")
