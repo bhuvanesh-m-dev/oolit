@@ -4,9 +4,6 @@ import sys
 from api import api
 
 def oolit():
-    # Create Ollama API instance
-    api = OllamaAPI(base_url="http://localhost:11434")
-    
     # Get prompt from command-line arguments
     if len(sys.argv) > 1:
         prompt = ' '.join(sys.argv[1:])
@@ -17,7 +14,7 @@ def oolit():
     
     # Send prompt to Ollama and get response
     print("Thinking...")
-    response = api.send_prompt(prompt)
+    response = api(prompt)
     
     # Print the response
     print(f"Oolit: {response}")
