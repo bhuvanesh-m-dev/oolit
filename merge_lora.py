@@ -3,9 +3,9 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 from peft import PeftModel
 import torch
 
-LORA_DIR = "/home/bhuvanesh-m-ubuntu/Desktop/ML/space-lora/content/outputs/space-lora"
+LORA_DIR = "./content/outputs/space-lora"
 BASE_MODEL = "distilgpt2"
-OUT_DIR = "/home/bhuvanesh-m-ubuntu/Desktop/ML/space-lora/merged-space-model"
+OUT_DIR = "./merged-space-model"
 
 print("Loading tokenizer from:", LORA_DIR)
 tokenizer = AutoTokenizer.from_pretrained(LORA_DIR)
