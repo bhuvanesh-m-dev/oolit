@@ -3,7 +3,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, GenerationConfig
 from peft import PeftModel
 import torch
 
-LORA_PATH = "/home/bhuvanesh-m-ubuntu/Desktop/ML/space-lora/content/outputs/space-lora"
+LORA_PATH = "./content/outputs/space-lora"
 BASE_MODEL = "distilgpt2"   # change if needed
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
